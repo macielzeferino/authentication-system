@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: bitnami/postgresql:latest
+    container_name: products_list
+    ports:
+      - '5432:5432'
+    env_file:
+      - .env
+    environment:
+      - POSTGRESQL_USERNAME=${POSTGRES_USER}
+      - POSTGRESQL_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRESQL_DATABASE=${POSTGRES_DB}
+    volumes:
+      - products_database:/bitnami/postgresql
+volumes:
+  products_database:
