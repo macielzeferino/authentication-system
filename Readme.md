@@ -21,8 +21,8 @@ Uma API REST com sistema de autenticação desenvolvida com Spring Boot e JWT.
 ### Variáveis de Ambiente
 1. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 ```properties
-POSTGRES_USER=macielzeferino
-POSTGRES_PASSWORD=senha1010
+POSTGRES_USER=nomeusuario
+POSTGRES_PASSWORD=senha
 POSTGRES_DB=products_database
 ```
 
